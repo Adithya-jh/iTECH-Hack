@@ -26,7 +26,7 @@ function Login({ providers }) {
         animate={{ x: [-600, 600, 0] }}
         transition={{ duration: 1.0 }}
      className="text-[30px] text-center text-bold font-sans text-[#ffffff] "> 
-     THE <span className="text-[#9981dd] font-BasementGrotesque">SOCIAL </span>NETWORK 
+     THE <span className="text-[#9981dd] font-BasementGrotesque">STUDENT </span>INNOVATION PLATFORM
      <div className="text-[white] text-[10px]"># still more to style</div>
 
      </motion.div>
