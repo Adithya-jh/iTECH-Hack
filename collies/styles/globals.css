@@ -591,6 +591,7 @@
 .copy-left {
   color: rgb(245, 108, 108);
   text-transform: uppercase;
+  /* background-color: rgb(108, 108, 234); */
 }
 
 .btns {
@@ -600,16 +601,37 @@
 .btn {
   margin: 0 0.8em 1em 0;
   padding: 0.3em 0.6em;
-  color: rgb(255, 45, 45);
-  border: 1px solid rgb(243, 31, 31);
+  color: rgb(45, 237, 255);
+  border: 1px solid rgb(9, 9, 9);
   border-radius: 20px;
+  cursor: pointer;
 }
 
+.btn:hover{
+  background-color: rgb(172, 102, 238);
+  transition: 2s linear ease-in-out;
+  color: white;
+}
+
+.hmu{
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  margin-bottom:10px;
+  padding: 8px;
+}
+
+.hmu:hover{
+  background-color: rgba(167, 85, 255, 0.5);
+}
 .copy-right {
   text-align: right;
-  color: rgb(255, 0, 0);
+  color: rgb(100, 156, 245);
   text-transform: uppercase;
-  font-weight: bold;
+  /* font-weight: bold; */
+  background-color: rgb(254, 224, 0);
+  border-radius: 50px;
+  padding: 15px;
 }
 
 @media (max-width: 900px) {
