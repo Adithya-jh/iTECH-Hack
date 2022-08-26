@@ -55,7 +55,7 @@ function Sidebar() {
           <a><SidebarLink text="Profile" Icon={UserIcon} /> </a>
         </Link>
 
-        <SidebarLink text="More" Icon={DotsCircleHorizontalIcon} />
+        <SidebarLink text="Community" Icon={DotsCircleHorizontalIcon} />
       </div>
       <motion.button 
         whileHover={{
