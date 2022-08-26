@@ -48,7 +48,7 @@ function clubs() {
       <div className="wrapper">
         <div className="main-title">
           {/* <div className="title-logo"><img src="images/logo.png" alt="" /></div> */}
-          <div className="title">COLLIES</div>
+          <div className="title">COLLIES AND CLUBS</div>
         </div>
         <div className="divider"></div>
         <div className="hero-image">
