@@ -31,8 +31,8 @@ function Login({ providers }) {
       
       <motion.div
         // animate={{ rotate: 360 }}
-        animate={{ x: [-600, 600, 0] }}
-        transition={{ duration: 1.0 }}
+        // animate={{ x: [-600, 600, 0] }}
+        // transition={{ duration: 1.0 }}
      className="text-[30px] text-center text-bold font-sans text-[#ffffff] "> 
      THE <span className="text-[#9981dd] font-BasementGrotesque">STUDENT INNOVATION PLATFORM</span>
      <div className="text-[white] text-[10px]"># still more to style</div>

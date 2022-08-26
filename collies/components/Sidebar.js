@@ -48,7 +48,7 @@ function Sidebar() {
         </Link>
 
         <Link href="/activity">
-          <a><SidebarLink text="Activity" Icon={ClipboardListIcon} /> </a>
+          <a><SidebarLink text="Workshops" Icon={ClipboardListIcon} /> </a>
         </Link>
 
         <Link href="/profile">
