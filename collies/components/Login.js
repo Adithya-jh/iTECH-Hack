@@ -1,17 +1,25 @@
 import { signIn } from "next-auth/react";
 import Image from "next/image";
+// import { useState } from "react";
 // import World from '../World/world';
 import {useState} from "next"
 import hour from './assets/hour.png'
 import rr from './assets/rr.png'
+import OutsideClickHandler from "react-outside-click-handler";
 import { motion } from "framer-motion"
+import Navbar from './Navbar/Navbar'
 
 function Login({ providers }) {
-
   return (
+    <div>
+        <Navbar/>
 
-    // <div className="flex flex-col items-center space-y-20 pt-48 justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-[100vh]">
-    <div className="flex flex-col items-center space-y-20 pt-48 justify-center bg-[url('./assets/rr.png')]">
+
+
+   
+
+    <div className="flex flex-col items-center space-y-20 pt-48 justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-[100vh]">
+    <div className="flex bg-white flex-col items-center space-y-20 pt-48 justify-center bg-[url('./assets/rr.png')] h-[100vh]">
       {/* <Image
         src={rr}
         width={300}
@@ -30,6 +38,8 @@ function Login({ providers }) {
      <div className="text-[white] text-[10px]"># still more to style</div>
 
      </motion.div>
+
+     
 
      {/* <motion.circle cx={500} animate={{ cx: [null, 100] }} className="bg-white"/> */}
    
@@ -58,6 +68,10 @@ function Login({ providers }) {
 
         
       </div>
+
+
+    </div>
+    </div>
     </div>
   );
 }
