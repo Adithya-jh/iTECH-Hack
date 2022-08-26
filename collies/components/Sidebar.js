@@ -24,7 +24,7 @@ function Sidebar() {
   const { data: session } = useSession();
 
   return (
-    <div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 fixed h-full">
+    <div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 fixed h-full bg-white">
       <div className="flex items-center justify-center w-14 h-14 hoverAnimation p-0 xl:ml-24">
         
       </div>
@@ -62,11 +62,11 @@ function Sidebar() {
           scale: 1.2,
           transition: { duration: 0.3 },
         }}
-      className="hidden xl:inline ml-auto bg-[#6a1edb] text-white rounded-full w-56 h-[52px] text-lg font-bold shadow-md hover:bg-[#6534e0]">
+      className="hidden xl:inline ml-auto bg-[#6a1edb] text-black rounded-full w-56 h-[52px] text-lg font-bold shadow-md hover:bg-[#6534e0]">
         NETWORK
       </motion.button>
       <div
-        className="text-[#d9d9d9] flex items-center justify-center mt-auto hoverAnimation xl:ml-auto xl:-mr-5"
+        className="text-[#121212] flex items-center justify-center mt-auto hoverAnimation xl:ml-auto xl:-mr-5"
         onClick={signOut}
       >
         <img

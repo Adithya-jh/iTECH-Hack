@@ -7,7 +7,7 @@ function messages() {
     animate={{ x: [-1000, 1000, 0] }}
     // animate={{ rotate: 360 }}
     transition={{ duration: 0.5 }}
-    className="text-white align-center justify-center flex  h-[100vh] position-absolute w-[100vw]">
+    className="text-black align-center justify-center flex  h-[100vh] position-absolute w-[100vw]">
       {/* <div>
         <Image src="https://www.istockphoto.com/illustrations/book-club" height="100vh" width="100vh"/>
       </div> */}

@@ -97,7 +97,7 @@ function Input() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Start Connecting...."
             rows="2"
-            className="bg-transparent outline-none text-[#d9d9d9] text-lg placeholder-gray-500 tracking-wide w-full min-h-[50px]"
+            className="bg-transparent outline-none text-[#000000] text-lg placeholder-gray-500 tracking-wide w-full min-h-[50px]"
           />
 
           {selectedFile && (
@@ -123,7 +123,7 @@ function Input() {
                 className="icon"
                 onClick={() => filePickerRef.current.click()}
               >
-                <PhotographIcon className="text-[#1d9bf0] h-[22px]" />
+                <PhotographIcon className="text-[#7155ec] h-[22px]" />
                 <input
                   type="file"
                   ref={filePickerRef}
@@ -133,15 +133,15 @@ function Input() {
               </div>
 
               <div className="icon rotate-90">
-                <ChartBarIcon className="text-[#1d9bf0] h-[22px]" />
+                <ChartBarIcon className="text-[#7155ec] h-[22px]" />
               </div>
 
               <div className="icon" onClick={() => setShowEmojis(!showEmojis)}>
-                <EmojiHappyIcon className="text-[#1d9bf0] h-[22px]" />
+                <EmojiHappyIcon className="text-[#7155ec] h-[22px]" />
               </div>
 
               <div className="icon">
-                <CalendarIcon className="text-[#1d9bf0] h-[22px]" />
+                <CalendarIcon className="text-[#7155ec] h-[22px]" />
               </div>
 
               {showEmojis && (
@@ -159,7 +159,7 @@ function Input() {
               )}
             </div>
             <button
-              className="bg-[#1d9bf0] text-white rounded-full px-4 py-1.5 font-bold shadow-md hover:bg-[#1a8cd8] disabled:opacity-50 disabled:cursor-default"
+              className="bg-[#742aeb] cursor-pointer text-white rounded-full px-4 py-1.5 font-bold shadow-md hover:bg-[#ed2478] disabled:opacity-50 disabled:cursor-default"
               disabled={!input && !selectedFile}
               onClick={sendPost}
             >

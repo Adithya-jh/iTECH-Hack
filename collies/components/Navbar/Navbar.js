@@ -87,9 +87,9 @@ const Navbar = () => {
                                     <ul>
                                         <li><a className="underlineHover" href="/">Home</a></li>
                                         <li><a className="underlineHover" href="#">About Us</a></li>
-                                        <li><a className="underlineHover" href="#">Products</a></li>
-                                        <li><a className="underlineHover" href="#">Services</a></li>
-                                        <li><a className="underlineHover" href="/contact">Contact Us</a></li>
+                                        {/* <li><a className="underlineHover" href="#">Products</a></li> */}
+                                        {/* <li><a className="underlineHover" href="#">Services</a></li> */}
+                                        <li><a className="underlineHover" href="/contact">Help</a></li>
                                     </ul>
                                 </span>
                             </div>

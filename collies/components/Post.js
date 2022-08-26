@@ -77,7 +77,7 @@ function Post({ id, post, postPage }) {
 
   return (
     <div
-      className="p-3 flex cursor-pointer border-b border-gray-700"
+      className="p-3 flex cursor-pointer border-b border-gray-700 text-black"
       onClick={() => router.push(`/${id}`)}
     >
       {!postPage && (
@@ -87,7 +87,7 @@ function Post({ id, post, postPage }) {
           className="h-11 w-11 rounded-full mr-4"
         />
       )}
-      <div className="flex flex-col space-y-2 w-full">
+      <div className="flex flex-col space-y-2 w-full text-black">
         <div className={`flex ${!postPage && "justify-between"}`}>
           {postPage && (
             <img
@@ -96,10 +96,10 @@ function Post({ id, post, postPage }) {
               className="h-11 w-11 rounded-full mr-4"
             />
           )}
-          <div className="text-[#6e767d]">
+          <div className="text-[#000000]">
             <div className="inline-block group">
               <h4
-                className={`font-bold text-[15px] sm:text-base text-[#d9d9d9] group-hover:underline ${
+                className={`font-bold text-[15px] sm:text-base text-[#020202] group-hover:underline ${
                   !postPage && "inline-block"
                 }`}
               >
@@ -116,17 +116,17 @@ function Post({ id, post, postPage }) {
               <Moment fromNow>{post?.timestamp?.toDate()}</Moment>
             </span>
             {!postPage && (
-              <p className="text-[#d9d9d9] text-[15px] sm:text-base mt-0.5">
+              <p className="text-[#000000] text-[15px] sm:text-base mt-0.5">
                 {post?.text}
               </p>
             )}
           </div>
           <div className="icon group flex-shrink-0 ml-auto">
-            <DotsHorizontalIcon className="h-5 text-[#6e767d] group-hover:text-[#1d9bf0]" />
+            <DotsHorizontalIcon className="h-5 text-[#6e767d] group-hover:text-[#9342da]" />
           </div>
         </div>
         {postPage && (
-          <p className="text-[#d9d9d9] mt-0.5 text-xl">{post?.text}</p>
+          <p className="text-[#000000] mt-0.5 text-xl">{post?.text}</p>
         )}
         <img
           src={post?.image}
@@ -134,7 +134,7 @@ function Post({ id, post, postPage }) {
           className="rounded-2xl max-h-[700px] object-cover mr-2"
         />
         <div
-          className={`text-[#6e767d] flex justify-between w-10/12 ${
+          className={`text-[#000000] flex justify-between w-10/12 ${
             postPage && "mx-auto"
           }`}
         >
@@ -146,11 +146,11 @@ function Post({ id, post, postPage }) {
               setIsOpen(true);
             }}
           >
-            <div className="icon group-hover:bg-[#1d9bf0] group-hover:bg-opacity-10">
-              <ChatIcon className="h-5 group-hover:text-[#1d9bf0]" />
+            <div className="icon group-hover:bg-[#893ae4] group-hover:bg-opacity-10">
+              <ChatIcon className="h-5 group-hover:text-[#884fe3]" />
             </div>
             {comments.length > 0 && (
-              <span className="group-hover:text-[#1d9bf0] text-sm">
+              <span className="group-hover:text-[#843ee7] text-sm">
                 {comments.length}
               </span>
             )}
